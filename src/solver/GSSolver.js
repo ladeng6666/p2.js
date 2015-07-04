@@ -135,7 +135,7 @@ GSSolver.prototype.solve = function(h, world){
             // Reset vlambda
             b.resetConstraintVelocity();
         }
-
+        //Seems no chances to run this condition, because maxFrictionIter is always to be 0.
         if(maxFrictionIter){
             // Iterate over contact equations to get normal forces
             for(iter=0; iter!==maxFrictionIter; iter++){
